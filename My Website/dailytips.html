@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Life Tips</title>
+    <link rel="stylesheet" href="/dailytips.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dailytips.html" onclick="navigateToHome()">Home</a></li>
+                <li><a href="about.html" onclick="navigateToAbout()">About</a></li>
+                <li><a href="/contact.html" onclick="navigateToContact()">Contact</a></li>
+                <li><a href="./advertise.html" onclick="navigateToAdvertising()">Advertising</a></li>
+                <li><a href="./partner.htm" onclick="navigateToPartnership()">Partnership</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <main>
+        <section class="hero">
+            <h1>Welcome to Daddy's Blog</h1>
+            <p><i>Explore our latest daddy's articles and join the conversation!</i></p>
+                <a href="about.html">Read more</a>
+        </section>
+        <section class="articles">
+            <div class="article"></div>
+            <h2 contenteditable="!true">Latest Articles</h2>
+            <ul>
+                <li>
+                    <h3 contenteditable="true">Article Title 1</h3>
+                    <p contenteditable="true">Article content 1...</p>
+                    <button class="read-more">Read More</button>
+                    <div class="full-content"></div>
+                </li>
+            </ul>
+        </section>
+        <section class="write-article">
+            <h2>Write an Article</h2>
+            <textarea id="article-content" placeholder="Write your article here..."></textarea>
+            <button id="publish-article">Publish An Article</button>
+        </section>
+    </main>
+    <section class="comments">
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <input type="text"id="comment-author" placeholder="Your Name">
+            <textarea id="comment-text" placeholder="Leave a comment..."></textarea>
+            <input type="submit" class="Submit"></input>
+        </form>
+        <ul id="comment-list"></ul>
+    </section>
+    <footer>
+        <p>&copy;2024 Daddy's Blog</p>
+    </footer>
+<script src="/dailytips.js"></script>
+</body>
+</html>
